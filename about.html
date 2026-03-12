@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Probeats — À Propos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="about.css"/>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+        <circle cx="16" cy="16" r="15" stroke="#009099" stroke-width="1.5"/>
+        <path d="M10 22V10l4 3.5 2-4 2 4 4-3.5v12" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="16" cy="16" r="3" fill="#009099"/>
+      </svg>
+      Probeats
+    </a>
+    <ul class="nav-links">
+      <li><a href="produit.html">Produits</a></li>
+      <li><a href="about.html" class="active">À propos</a></li>
+      <li><a href="assistance.html">Assistance</a></li>
+    </ul>
+    <div class="nav-actions">
+      <span class="nav-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      </span>
+      <a href="connexion.html" class="nav-btn">Connexion</a>
+      <button class="mobile-menu-btn" onclick="document.getElementById('mobileMenu').classList.add('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileMenu">
+    <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <a href="index.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Accueil</a>
+    <a href="produit.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Produits</a>
+    <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">À propos</a>
+    <a href="assistance.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Assistance</a>
+    <a href="connexion.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Connexion</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-line"></div>
+    <div class="page-header-content">
+      <div class="page-header-label">Notre histoire</div>
+      <h1 class="page-header-title">
+        À <em>propos</em>
+      </h1>
+    </div>
+  </div>
+
+  <!-- STORY -->
+  <section class="story-section">
+    <div class="story-meta">
+      <div class="story-year">2020</div>
+      <div class="story-label">Fondation</div>
+    </div>
+    <div class="story-content">
+      <h2>L'histoire de<br>Probeats</h2>
+      <p class="story-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Probeats est née d'une passion commune pour la musique et d'une conviction : la haute qualité audio ne devrait pas être réservée à une élite. Fondée en 2020 par une équipe d'ingénieurs acousticiens et de passionnés de design, la marque a choisi de défier les géants du secteur.
+      </p>
+      <div class="story-highlight">
+        « Nous voulions créer des appareils audio qui transcendent l'expérience d'écoute, accessibles à tous ceux qui refusent de faire des compromis. »
+      </div>
+      <p class="story-text">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Après deux ans de recherche et développement intensifs, de tests en laboratoires certifiés et de collaboration avec des professionnels de la musique, Probeats est prête à révolutionner le marché de l'audio sans fil.
+      </p>
+      <p class="story-text">
+        Nos trois produits phares — le casque audio Pro X1, l'enceinte Bluetooth et l'enceinte studio — représentent l'aboutissement de cette vision : des appareils qui allient performance technique et design épuré, pensés pour une cible jeune, mobile et exigeante.
+      </p>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="section-label">Chronologie</div>
+    <h2 class="section-title">Notre parcours</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-title">Création de Probeats</div>
+          <div class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Une équipe de 5 passionnés se réunit pour fonder la marque avec une vision claire : révolutionner l'audio sans fil.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-title">R&D & Prototypage</div>
+          <div class="timeline-text">Sedut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. Collaboration avec des ingénieurs acousticiens et prototypage des premiers modèles.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-title">Tests & Certifications</div>
+          <div class="timeline-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Obtention des certifications Hi-Res Audio et validation des produits en laboratoire.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-title">Lancement commercial</div>
+          <div class="timeline-text">At vero eos et accusamus et iusto odio dignissimos ducimus. Probeats lance ses 3 produits phares sur le marché et ouvre son e-commerce.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRENGTHS -->
+  <section class="strengths-section">
+    <div class="strengths-header">
+      <div class="section-label">Nos valeurs</div>
+      <h2 class="section-title">Nos points forts</h2>
+    </div>
+    <div class="strengths-grid">
+      <div class="strength-card">
+        <div class="strength-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+          </svg>
+        </div>
+        <div class="strength-title">Qualité audio Hi-Res</div>
+        <div class="strength-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nos appareils sont certifiés Hi-Res Audio et offrent une réponse en fréquence exceptionnelle de 5Hz à 40kHz pour une fidélité absolue.</div>
+      </div>
+      <div class="strength-card">
+        <div class="strength-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+        </div>
+        <div class="strength-title">Performance longue durée</div>
+        <div class="strength-text">Sed ut perspiciatis unde omnis iste natus error. Nos batteries haute capacité offrent jusqu'à 40 heures d'autonomie, et la technologie de charge rapide vous donne 3h d'écoute en 10 minutes.</div>
+      </div>
+      <div class="strength-card">
+        <div class="strength-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="strength-title">Innovation technologique</div>
+        <div class="strength-text">Nemo enim ipsam voluptatem quia. Réduction de bruit active de nouvelle génération, Bluetooth 5.2 multipoint, et des matériaux premium pour un confort d'utilisation optimal.</div>
+      </div>
+      <div class="strength-card">
+        <div class="strength-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+          </svg>
+        </div>
+        <div class="strength-title">Design pensé mobile</div>
+        <div class="strength-text">At vero eos et accusamus. Nos produits sont conçus pour les jeunes actifs en mouvement. Légers, résistants et au design épuré, ils s'intègrent parfaitement à votre lifestyle.</div>
+      </div>
+      <div class="strength-card">
+        <div class="strength-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+          </svg>
+        </div>
+        <div class="strength-title">Engagement client</div>
+        <div class="strength-text">Nam libero tempore cum soluta nobis eligendi optio cumque nihil impedit. Garantie 2 ans, retours sous 30 jours et support client dédié 7j/7 pour une expérience sans friction.</div>
+      </div>
+      <div class="strength-card">
+        <div class="strength-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+          </svg>
+        </div>
+        <div class="strength-title">Recherche & Développement</div>
+        <div class="strength-text">Temporibus autem quibusdam et aut officiis debitis rerum necessitatibus. Plus de 2 ans de R&D et de collaboration avec des ingénieurs acousticiens certifiés pour des résultats mesurables.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:1.1rem;">
+          <svg viewBox="0 0 32 32" fill="none" width="26" height="26">
+            <circle cx="16" cy="16" r="15" stroke="#009099" stroke-width="1.5"/>
+            <path d="M10 22V10l4 3.5 2-4 2 4 4-3.5v12" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="16" cy="16" r="3" fill="#009099"/>
+          </svg>
+          Probeats
+        </a>
+        <p>Ultra High Quality Audio. Conçu pour les esprits qui ne se contentent pas du reste.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">IG</a>
+          <a href="#" class="social-btn">TW</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produits</h4>
+        <ul>
+          <li><a href="produit.html">Casque Audio Pro X1</a></li>
+          <li><a href="produit.html">Enceinte Bluetooth</a></li>
+          <li><a href="produit.html">Enceinte Studio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="mentions-legales.html">Confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@probeats.fr">hello@probeats.fr</a></li>
+          <li><a href="assistance.html">FAQ</a></li>
+          <a href="#" style="display:flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:300;color:rgba(255,255,255,0.5);text-decoration:none;margin-top:4px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+          <a href="#" style="display:flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:300;color:rgba(255,255,255,0.5);text-decoration:none;margin-top:8px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            Twitter
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Probeats. Tous droits réservés.</p>
+      <p>Ultra High Quality Audio since 2020</p>
+    </div>
+  </footer>
+
+</body>
+</html>
