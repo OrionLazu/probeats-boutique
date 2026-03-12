@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Probeats — Ultra High Quality Audio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="15" stroke="#009099" stroke-width="1.5"/>
+        <path d="M10 22V10l4 3.5 2-4 2 4 4-3.5v12" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="16" cy="16" r="3" fill="#009099"/>
+      </svg>
+      Probeats
+    </a>
+    <ul class="nav-links">
+      <li><a href="produit.html">Produits</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="assistance.html">Assistance</a></li>
+    </ul>
+    <div class="nav-actions">
+      <!-- Panier -->
+      <span class="nav-icon" title="Panier">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+      </span>
+      <!-- Login -->
+      <a href="connexion.html" class="nav-btn">Connexion</a>
+      <button class="mobile-menu-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileMenu">
+    <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <a href="index.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Accueil</a>
+    <a href="produit.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Produits</a>
+    <a href="about.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">À propos</a>
+    <a href="assistance.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Assistance</a>
+    <a href="connexion.html" onclick="document.getElementById('mobileMenu').classList.remove('open')">Connexion</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Ultra High Quality Audio</div>
+      <h1 class="hero-title">
+        Sound<br>
+        <span>Beyond</span>
+        Limits
+      </h1>
+      <p class="hero-desc">
+        Probeats redéfinit l'expérience sonore. Nos appareils audio sans fil allient performance longue durée et qualité d'écoute immersive, pour une cible jeune et exigeante.
+      </p>
+      <div class="hero-cta">
+        <a href="produit.html" class="btn-primary">Découvrir les produits</a>
+        <button class="btn-ghost">Voir la vidéo</button>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-product-ring">
+        <div class="hero-ring-outer"></div>
+        <div class="hero-ring-inner"></div>
+        <div class="hero-product-glow">
+          <!-- Headphone SVG icon -->
+          <svg class="hero-headphone-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 110V90C30 52.3 60.3 22 98 22h4c37.7 0 68 30.3 68 68v20" stroke="#7EDCE1" stroke-width="3" stroke-linecap="round"/>
+            <rect x="18" y="108" width="28" height="50" rx="8" fill="#009099" opacity="0.8"/>
+            <rect x="154" y="108" width="28" height="50" rx="8" fill="#009099" opacity="0.8"/>
+            <circle cx="100" cy="100" r="20" stroke="#41B4BB" stroke-width="2" fill="rgba(0,144,153,0.15)"/>
+            <circle cx="100" cy="100" r="6" fill="#7EDCE1"/>
+          </svg>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-label">Autonomie</div>
+          <div class="hero-badge-value">40H</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-val">40H</div><div class="stat-label">Autonomie batterie</div></div>
+      <div class="stat"><div class="stat-val">Hi-Res</div><div class="stat-label">Qualité audio certifiée</div></div>
+      <div class="stat"><div class="stat-val">3</div><div class="stat-label">Produits phares</div></div>
+      <div class="stat"><div class="stat-val">100%</div><div class="stat-label">Sans fil</div></div>
+    </div>
+  </section>
+
+  <!-- PRODUITS -->
+  <section class="products-section">
+    <div class="products-header">
+      <div class="section-label">Notre gamme</div>
+      <h2 class="section-title">Les produits<br>phares</h2>
+    </div>
+    <div class="products-grid">
+
+      <!-- Featured: Casque -->
+      <div class="product-featured">
+        <div class="product-tag">★ Produit phare</div>
+        <div class="product-icon-area">
+          <svg width="120" height="100" viewBox="0 0 200 150" fill="none">
+            <path d="M20 80V65C20 35.1 44.1 11 74 11h52c29.9 0 54 24.1 54 54v15" stroke="#7EDCE1" stroke-width="3" stroke-linecap="round"/>
+            <rect x="8" y="78" width="22" height="40" rx="6" fill="#009099" opacity="0.9"/>
+            <rect x="170" y="78" width="22" height="40" rx="6" fill="#009099" opacity="0.9"/>
+            <text x="100" y="80" text-anchor="middle" font-family="Barlow" font-size="11" fill="rgba(126,220,225,0.5)" letter-spacing="2">PROBEATS</text>
+          </svg>
+        </div>
+        <div class="product-name">Casque Audio<br>Pro X1</div>
+        <div class="product-desc">Son Hi-Res, réduction de bruit active, autonomie 40h. L'excellence sonore redéfinie pour les audiophiles exigeants.</div>
+        <div class="product-price">299 €</div>
+        <a href="commande.html" class="btn-buy">
+          Acheter maintenant
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Card: Enceinte Bluetooth -->
+      <div class="product-card">
+        <div class="product-tag">Nouveauté</div>
+        <div class="product-icon-area">
+          <svg width="70" height="80" viewBox="0 0 80 100" fill="none">
+            <rect x="10" y="8" width="60" height="84" rx="12" stroke="#41B4BB" stroke-width="2"/>
+            <circle cx="40" cy="42" r="18" stroke="#7EDCE1" stroke-width="1.5"/>
+            <circle cx="40" cy="42" r="6" fill="#009099" opacity="0.8"/>
+            <circle cx="40" cy="78" r="5" stroke="#41B4BB" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="product-name">Enceinte<br>Bluetooth</div>
+        <div class="product-desc">Son stéréo 360°, résistante à l'eau, 24h d'autonomie.</div>
+        <div class="product-price">189 €</div>
+        <a href="produit.html" class="btn-buy">Voir le produit</a>
+      </div>
+
+      <!-- Card: Enceinte Studio -->
+      <div class="product-card">
+        <div class="product-tag">Pro</div>
+        <div class="product-icon-area">
+          <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+            <rect x="5" y="10" width="90" height="80" rx="4" stroke="#41B4BB" stroke-width="2"/>
+            <circle cx="50" cy="50" r="28" stroke="#7EDCE1" stroke-width="1.5"/>
+            <circle cx="50" cy="50" r="14" stroke="#41B4BB" stroke-width="1.5"/>
+            <circle cx="50" cy="50" r="5" fill="#009099"/>
+            <rect x="16" y="20" width="12" height="12" rx="2" fill="rgba(0,144,153,0.4)"/>
+          </svg>
+        </div>
+        <div class="product-name">Enceinte<br>Studio</div>
+        <div class="product-desc">Moniteur de studio bi-amplifié. Précision et fidélité absolue.</div>
+        <div class="product-price">449 €</div>
+        <a href="produit.html" class="btn-buy">Voir le produit</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="testimonials-header">
+      <div class="section-label">Ce qu'ils en disent</div>
+      <h2 class="section-title">Recommandations<br>& avis</h2>
+    </div>
+    <div class="testimonials-track">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">« Le casque Pro X1 est une révélation. La qualité audio est incomparable et la réduction de bruit fonctionne à la perfection. »</p>
+        <div class="testimonial-author">Thomas M.</div>
+        <div class="testimonial-role">Ingénieur du son</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">« L'enceinte Bluetooth m'accompagne partout. Un son puissant et cristallin, même en extérieur. Probeats a tout compris. »</p>
+        <div class="testimonial-author">Léa S.</div>
+        <div class="testimonial-role">Photographe / DJ amateur</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★☆</div>
+        <p class="testimonial-text">« L'enceinte studio est devenue indispensable dans mon home studio. La précision des mediums est remarquable pour ce prix. »</p>
+        <div class="testimonial-author">Karim B.</div>
+        <div class="testimonial-role">Producteur musical</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size:1.1rem;">
+          <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+            <circle cx="16" cy="16" r="15" stroke="#009099" stroke-width="1.5"/>
+            <path d="M10 22V10l4 3.5 2-4 2 4 4-3.5v12" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="16" cy="16" r="3" fill="#009099"/>
+          </svg>
+          Probeats
+        </a>
+        <p>Ultra High Quality Audio. Conçu pour les esprits qui ne se contentent pas du reste.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" title="Instagram">IG</a>
+          <a href="#" class="social-btn" title="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produits</h4>
+        <ul>
+          <li><a href="produit.html">Casque Audio Pro X1</a></li>
+          <li><a href="produit.html">Enceinte Bluetooth</a></li>
+          <li><a href="produit.html">Enceinte Studio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="assistance.html">Assistance</a></li>
+          <li><a href="assistance.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="mentions-legales.html">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@probeats.fr">hello@probeats.fr</a></li>
+          <li><a href="assistance.html">FAQ</a></li>
+          <li><a href="assistance.html">SAV</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Probeats. Tous droits réservés.</p>
+      <p>Ultra High Quality Audio since 2020</p>
+    </div>
+  </footer>
+
+</body>
+</html>
