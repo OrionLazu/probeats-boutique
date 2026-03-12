@@ -1,0 +1,72 @@
+/* ── Styles — mentions-legales.html ── */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark: #292A2D; --teal: #009099; --teal-mid: #41B4BB;
+      --teal-light: #7EDCE1; --warm: #B6A299;
+      --white: #FFFFFF; --black: #0A0A0B;
+    }
+    body { font-family: 'Barlow', sans-serif; background: var(--black); color: var(--white); }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px; height: 72px;
+      background: rgba(10,10,11,0.95); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); text-decoration: none; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.65); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: var(--teal-light); }
+    .nav-actions { display: flex; gap: 20px; align-items: center; }
+    .nav-btn { background: var(--teal); color: var(--white); border: none; padding: 8px 20px; font-family: 'Barlow', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; text-decoration: none; display: inline-block; }
+    .mobile-menu-btn { display: none; background: none; border: none; color: white; cursor: pointer; padding: 4px; }
+
+    .page-header {
+      padding: 120px 48px 60px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .page-header-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--teal); margin-bottom: 16px; }
+    .page-header-title { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+
+    .content-area { max-width: 800px; margin: 0 auto; padding: 64px 48px; }
+
+    .legal-section { margin-bottom: 48px; }
+    .legal-section h2 {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 16px; padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,144,153,0.2);
+    }
+    .legal-section p { font-size: 0.95rem; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.6); margin-bottom: 12px; }
+    .legal-section strong { color: rgba(255,255,255,0.85); font-weight: 600; }
+    .legal-section ul { list-style: none; margin-top: 8px; }
+    .legal-section ul li { font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.6); padding: 6px 0; padding-left: 16px; position: relative; line-height: 1.6; }
+    .legal-section ul li::before { content: '—'; position: absolute; left: 0; color: var(--teal); }
+
+    footer { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.06); padding: 48px; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-bottom p { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 0.75rem; color: rgba(255,255,255,0.3); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--white); }
+
+    /* MOBILE NAV OVERLAY */
+    .mobile-overlay {
+      display: none; position: fixed; inset: 0; z-index: 99;
+      background: rgba(10,10,11,0.98); flex-direction: column;
+      align-items: center; justify-content: center; gap: 32px;
+    }
+    .mobile-overlay.open { display: flex; }
+    .mobile-overlay a { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.8); text-decoration: none; transition: color .2s; }
+    .mobile-overlay a:hover { color: var(--teal-light); }
+    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: white; cursor: pointer; }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .mobile-menu-btn { display: block; }
+      .page-header { padding: 100px 24px 48px; }
+      .content-area { padding: 40px 24px; }
+      footer { padding: 32px 24px; }
+    }
